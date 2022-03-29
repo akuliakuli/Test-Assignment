@@ -1,3 +1,8 @@
+<?php
+    include  "includes/autoload.inc.php";
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +23,9 @@
     <div class ="item">
         <input type ="checkbox" class ="delete-checkbox">
             <div class ="item-menu">
-                <h1>SKU-SKU-SKU-TR</h1>
+                <h1><?php $some = new View();
+                    $some ->showItems("ikea chair");
+                ?></h1>
                 <h1>IKEA CHAIR</h1>
                 <h1>245-45-l45</h1>
                 <h1>50$</h1>
