@@ -1,1 +1,1 @@
-ScandiWeb test assignment
+test assignment
