@@ -68,20 +68,17 @@ header button:nth-last-of-type(1){
 main{
     margin-top: 3em;
     display: flex;
-    gap: 2.5em;
-    flex-wrap: wrap;
+    gap: 2em;
     justify-content:center;
-
-
+}
+main > *{
+    width: 100%;
 }
 
 .item{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 20em;
-    max-width: 20em;
-    padding: 2em;
+    flex-direction: column;
+    padding:1em;
     border:2px solid rebeccapurple;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color:lightskyblue;
@@ -92,6 +89,8 @@ main{
 .item input{
     align-self: flex-start;
 }
+
+
 footer{
     border-top:2px solid rebeccapurple;
     margin-top: auto;
@@ -143,6 +142,9 @@ form{
     header button{
         width: 100%;
         align-self: center;
-        font-size: 1.3em;
+        font-size: 1.5em;
+    }
+    main {
+        flex-direction: column;
     }
 }
