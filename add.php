@@ -14,11 +14,10 @@
     <header>
         <p>Product Add</p>
         <div class ="buttons">
-              <button onclick="location.href ='index.html'" type ="button" >SAVE</button>
+              <button onclick="location.href ='index.php'" type ="button" >SAVE</button>
               <button>CANCEL</button>    
         </div>
 </header>
-
 <form id = "product-form">
     <div class ="input-menu">
         <p>SKU</p>
@@ -34,7 +33,7 @@
     </div>
     <div class ="input-menu">
     <p>Type Switcher</p>
-    <select id = "product-type">
+    <select id = "product-type" data-placeholder ="Choose product type">
         <option>DVD</option>
         <option>Book</option>
         <option>Furniture</option>

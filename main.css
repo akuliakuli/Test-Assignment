@@ -8,6 +8,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
+    background-color:#FFFFFF;
 }
 
 header{
@@ -16,12 +17,12 @@ header{
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 1em;
-    background-color:dimgray
+    background-color:#2D3142;
 }
 
 header p {
-    color:whitesmoke;
-    background-color: rebeccapurple;
+    background-color:#4F5D75;
+    color:#fff;
     margin-left: 2.5em;
     font-size: 2.3em;
 }
@@ -34,9 +35,9 @@ header button{
   flex-grow: 1;
   margin-bottom: .7em;
   padding: .8em 1em;
-  background: rebeccapurple;
+  background: #4F5D75;
   border-radius: 11px;
-  color: #fff;
+  color:#EF8354;
   cursor: pointer;
   font-size: 1em;
   text-align: center;
@@ -78,21 +79,26 @@ main > *{
 .item{
     display: flex;
     flex-direction: column;
-    padding:1em;
-    border:2px solid rebeccapurple;
+    align-items: center;
+    padding:.5em;
+    border:2px solid #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    background-color:lightskyblue;
-    color: white;
+    background-color: #BFC0C0;
+    color: #fff;
     text-align: center;
     margin-bottom: 3em;
 }
 .item input{
     align-self: flex-start;
 }
-
+.item-menu h1{
+    background-color: #EF8354;
+    padding: .5em;
+}
 
 footer{
-    border-top:2px solid rebeccapurple;
+    border-top:2px solid #FFFFFF;
+    background-color:#2D3142;
     margin-top: auto;
     text-align: center;
     display: flex;
@@ -102,9 +108,9 @@ footer{
 footer p {
     max-width: 12em;
     padding: .5em;
-    color: white;
+    color: #fff;
     font-size: 1.2em;
-    background-color:dimgray
+    background-color:#4F5D75;
 }
 
 form{
@@ -117,12 +123,16 @@ form{
 
 .input-menu{
     display: flex;
-    gap: 5em;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 15%;
+    /* gap: 5em; */
     align-items:center;
+    color:#FFFFFF
 }
 .input-menu p{
-    max-width: 1em;
-    flex-grow: 0;
+    padding: .4em;
+    background-color: #EF8354;
 }
 .input menu input{
     flex-grow: 1;
