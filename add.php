@@ -1,3 +1,7 @@
+<?php
+    include  "includes/autoload.inc.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
