@@ -73,9 +73,8 @@ main{
     justify-content:center;
 }
 main > *{
-    width: 100%;
+    width: 30%;
 }
-
 .item{
     display: flex;
     flex-direction: column;
@@ -117,8 +116,8 @@ form{
     display: flex;
     flex-direction: column;
     align-items:stretch;
-    margin-left: 3em;
-    font-size: 1.5em;
+    /* margin-left: 3em; */
+    font-size: 1.2em;
     min-height: 100vh;
 }
 
@@ -129,7 +128,8 @@ form{
     max-width: 15%;
     /* gap: 5em; */
     align-items:center;
-    color:#FFFFFF
+    color:#FFFFFF;
+    margin-left: 3em;
 }
 .input-menu p{
     padding: .4em;
@@ -144,6 +144,13 @@ form{
     color: #FFFFFF;
     max-width: fit-content;
     padding: .5em;
+    margin-left: 3em;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }
 @media (max-width:600px){
     header{

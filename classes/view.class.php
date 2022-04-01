@@ -16,4 +16,5 @@ class View extends Modal{
             '</div>';
         }
    }
+
 }

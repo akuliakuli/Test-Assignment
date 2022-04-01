@@ -12,26 +12,25 @@
 </head>
 <body>
 <script defer src ="script.js"></script>
-
+<form id = "product-form" method ="POST" action = "add.php">
 <header>
     <p>Product Add</p>
     <div class ="buttons">
-        <button onclick="location.href ='index.php'" type ="button" >SAVE</button>
+        <button type ="submit" onclick="location.href ='index.php'"><input type ="submit">SAVE</button>
         <button>CANCEL</button>    
 </div>
 </header>
-<form id = "product-form" method ="POST" action = "add.php">
     <div class ="input-menu">
        <p>SKU</p>
-       <input type ="text" placeholder="#sku" id = "sku">
+       <input type ="text" placeholder="#sku" id = "sku" name  = "sku">
 </div>
     <div class ="input-menu">
         <p>Name</p>
-        <input type ="text" placeholder="#name" id = "name">
+        <input type ="text" placeholder="#name" id = "name" name  = "name">
     </div>
 <div class ="input-menu">
     <p>Price</p>
-    <input type ="text" placeholder="#price" id = "price">
+    <input type ="text" placeholder="#price" id = "price" name  = "price">
 </div>
     <div class ="input-menu">
         <p>Type Switcher</p>
@@ -68,6 +67,9 @@
      <p class ="text">Please Provide product WEIGHT</p>
 </form>
 <footer>
+    <?php $send = new Contr();
+        $send ->sendItemToDB("louis vuttion","wooden stick",45,"hello");
+    ?>
     <p>Scandiweb Test assignment</p>
 </footer>
 </body>
