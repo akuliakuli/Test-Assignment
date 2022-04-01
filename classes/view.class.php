@@ -10,7 +10,7 @@ class View extends Modal{
             '<div class ="item-menu">'.
             '<h1>' . $res['sku'] . '</h1>'.
             '<h1>' . $res['name'] . '</h1>'.
-            '<h1>' . $res['price'] . '</h1>'.
+            '<h1>' . $res['price'] ."$". '</h1>'.
             '<h1>' . $res['attr'] . '</h1>'.
             '</div>'.
             '</div>';

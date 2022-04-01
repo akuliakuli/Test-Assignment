@@ -1,6 +1,6 @@
 <?php
 
-class Modal extends Connection{
+abstract class Modal extends Connection{
     protected function getItems($id){
         $sql = "SELECT * FROM products WHERE id > ?";
         $stmt = $this ->connect() -> prepare($sql);

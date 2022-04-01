@@ -119,6 +119,7 @@ form{
     align-items:stretch;
     margin-left: 3em;
     font-size: 1.5em;
+    min-height: 100vh;
 }
 
 .input-menu{
@@ -132,13 +133,18 @@ form{
 }
 .input-menu p{
     padding: .4em;
-    background-color: #EF8354;
+    background-color: #4F5D75;
 }
 .input menu input{
     flex-grow: 1;
     
 }
-
+.text{
+    background-color: #EF8354;
+    color: #FFFFFF;
+    max-width: fit-content;
+    padding: .5em;
+}
 @media (max-width:600px){
     header{
         flex-direction: column;
@@ -156,5 +162,14 @@ form{
     }
     main {
         flex-direction: column;
+    }
+    .input-menu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+        min-width: 100%;
+    }
+    .input-menu > *{
+        width:50%;
     }
 }
