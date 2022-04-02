@@ -73,7 +73,7 @@ main{
     justify-content:center;
 }
 main > *{
-    width: 40%;
+    width: 100%;
 }
 .item{
     display: flex;
@@ -125,7 +125,7 @@ form{
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    max-width: 15%;
+    /* max-width: fit-content; */
     /* gap: 5em; */
     align-items:center;
     color:#FFFFFF;
@@ -142,7 +142,6 @@ form{
 .text{
     background-color: #EF8354;
     color: #FFFFFF;
-    max-width: fit-content;
     padding: .5em;
     margin-left: 3em;
 }
@@ -152,7 +151,7 @@ form{
 .hide{
     display: none;
 }
-@media (max-width:600px){
+@media (max-width:936px){
     header{
         flex-direction: column;
         justify-content: flex-start;
@@ -169,14 +168,14 @@ form{
     }
     main {
         flex-direction: column;
+        align-items: center;
+    }
+    main > *{
+        max-width: min-content;
     }
     .input-menu{
         flex-direction: column;
         justify-content: flex-start;
         align-items:flex-start;
-        min-width: 100%;
-    }
-    .input-menu > *{
-        width:50%;
     }
 }

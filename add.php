@@ -42,8 +42,9 @@
     </select>
 </div>
     <?php
+    $some = new Furniture();
 
-    
+    $some ->changeOption();
     ?>
 </form>
 <footer>
