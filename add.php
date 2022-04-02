@@ -1,5 +1,6 @@
 <?php
     include  "includes/autoload.inc.php";
+    include "classes/option.class.php";
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@
 <header>
     <p>Product Add</p>
     <div class ="buttons">
-        <button type ="submit" onclick="location.href ='index.php'"><input type ="submit">SAVE</button>
+        <button type ="submit"><a href = "index.php">SAVE</a></button>
         <button>CANCEL</button>    
 </div>
 </header>
@@ -32,44 +33,20 @@
     <p>Price</p>
     <input type ="text" placeholder="#price" id = "price" name  = "price">
 </div>
-    <div class ="input-menu">
-        <p>Type Switcher</p>
-            <select id = "product-type" data-placeholder ="Choose product type">
-                <option>DVD</option>
-                <option>Book</option>
-                <option>Furniture</option>
-            </select>
-        </div>
-    <div class ="input-menu">
-        <p>SIZE(MB)</p>
-        <input type ="text" placeholder="#size" id = "size">
-    </div>
-    <p class ="text">Please Provide product SIZE</p>
-    <div class ="input-menu">
-        <p>HEIGHT(CM)</p>
-        <input type ="text" placeholder="#height" id = "height">
-    </div>
-    <p class ="text">Please Provide product HEIGHT</p>
-    <div class ="input-menu">
-        <p>WIDTH(CM)</p>
-        <input type ="text" placeholder="#width" id = "width">
-    </div>
-    <p class ="text">Please Provide product WIDTH</p>
-    <div class ="input-menu">
-        <p>LENGHT(CM)</p>
-        <input type ="text" placeholder="#length" id = "length">
-    </div>
-    <p class ="text">Please Provide product LENGTH</p>
-    <div class ="input-menu">
-        <p>WEIGHT(CM)</p>
-        <input type ="text" placeholder="#weight" id = "weight">
-    </div>
-     <p class ="text">Please Provide product WEIGHT</p>
+<div class ="input-menu">
+    <p>Type Switcher</p>
+        <select id = "product-type" data-placeholder ="Choose product type">
+            <option value ="dvd">DVD</option>
+            <option value ="book">Book</option>
+            <option value = "furniture">Furniture</option>
+    </select>
+</div>
+    <?php
+
+    
+    ?>
 </form>
 <footer>
-    <?php $send = new Contr();
-        $send ->sendItemToDB("louis vuttion","wooden stick",45,"hello");
-    ?>
     <p>Scandiweb Test assignment</p>
 </footer>
 </body>

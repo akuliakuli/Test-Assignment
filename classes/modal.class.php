@@ -8,8 +8,8 @@ abstract class Modal extends Connection{
         $result = $stmt ->fetchAll();
         return $result;
     }
-    protected function add($sku,$name,int $price,$attr){
-        $sql = 'INSERT INTO products (sku, name, price, attr, id)VALUES (?,?,?,?)';
+    protected function add($sku,$name,$price,$attr){
+        $sql = 'INSERT INTO products (sku,name,price,attr) VALUES (?,?,?,?)';
         $stmt = $this ->connect() ->prepare($sql);
         $stmt ->execute([$sku,$name,$price,$attr]);
     }

@@ -14,7 +14,7 @@ body{
 header{
     display: flex;
     justify-content:space-between;
-    align-items: flex-end;
+    align-items:flex-end;
     flex-wrap: wrap;
     gap: 1em;
     background-color:#2D3142;
@@ -29,7 +29,7 @@ header p {
 
 header button a{
     text-decoration: none;
-    color: #fff;
+    color: #EF8354;
 }
 header button{
   flex-grow: 1;
@@ -59,13 +59,13 @@ header button:active{
   border-bottom-style: none;
   border-color: #dadada;
 }
-
 header button:nth-child(1){
     margin-right: 0.8em;
 }
-header button:nth-last-of-type(1){
-    margin-right: 5em;
+header button:nth-child(2){
+    margin-right: 2em;
 }
+
 main{
     margin-top: 3em;
     display: flex;
@@ -73,7 +73,7 @@ main{
     justify-content:center;
 }
 main > *{
-    width: 30%;
+    width: 40%;
 }
 .item{
     display: flex;
