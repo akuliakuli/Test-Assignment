@@ -35,18 +35,46 @@
 </div>
 <div class ="input-menu">
     <p>Type Switcher</p>
-        <select id = "product-type" data-placeholder ="Choose product type">
+        <select id = "product-type">
             <option value ="dvd">DVD</option>
             <option value ="book">Book</option>
             <option value = "furniture">Furniture</option>
     </select>
 </div>
-    <?php
-    $some = new Furniture();
+<div class ="dvd">
+    <div class ="option">
+    <p>SIZE(MB)</p>
+        <input type ="text" placeholder="#size" id = "size">
+    </div>
+    <p class ="text">Please Provide product SIZE</p>
+    </div>
+</div>
+<div class ="book">
+    <div class ="option">
+     <p>WEIGHT(CM)</p>
+     <input type ="text" placeholder="#weight" id = "weight">
+     </div>
+     <p class ="text">Please Provide product WEIGHT';
+</div>
+<div class ="furniture">
+    <div class = "option">
+    <p>HEIGHT(CM)</p>
+        <input type ="text" placeholder="#height" id = "height">
+        </div>
+        <p class ="text">Please Provide product HEIGHT</p>
+        <div class ="option">
+        <p>WIDTH(CM)</p>
+        <input type ="text" placeholder="#width" id = "width">
+        </div>
+        <p class ="text">Please Provide product WIDTH</p>
+        <div class ="option">
+        <p>LENGHT(CM)</p>
+        <input type ="text" placeholder="#length" id = "length">
+        </div>
+        <p class ="text">Please Provide product LENGTH</p>'
+    </div>
+    </form>
 
-    $some ->changeOption();
-    ?>
-</form>
 <footer>
     <p>Scandiweb Test assignment</p>
 </footer>
