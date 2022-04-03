@@ -7,8 +7,6 @@ let switcher = document.querySelector("#product-type"),
 
 
 switcher.addEventListener("change",(e) =>{
-    let b = new [new Dvd() , new Book(), new furniture()]
-    b.toggleEl()
      if(e.target.value == "dvd"){
          toggleEl(dvd,book,furn)
     }else if(e.target.value == "book"){

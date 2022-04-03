@@ -1,6 +1,5 @@
 <?php
     include  "includes/autoload.inc.php";
-    include "classes/option.class.php";
 ?>
 
 <!DOCTYPE html>
