@@ -1,9 +1,7 @@
 <?php
     include  "includes/autoload.inc.php";
     $a = new View();
-
-?> 
-
+?>
 
 <!DOCTYPE html>
 <html>
@@ -29,5 +27,6 @@
 <footer>
     <p>Scandiweb Test assignment</p>
 </footer>
+<script defer src ="script.js"></script>
 </body>
 </html>
