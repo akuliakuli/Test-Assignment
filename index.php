@@ -1,8 +1,7 @@
 <?php
     include  "includes/autoload.inc.php";
-    $a = new View();
-?>
 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +20,7 @@
     </header>
 <main>
     <?php 
+        $a = new View();
         $a->showItems(0);
     ?>
 </main>
