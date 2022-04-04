@@ -14,7 +14,7 @@
     <header>
             <p>Product List</p>
             <div class ="buttons">
-                  <button onclick="location.href ='add.php'" type ="button">ADD</button>
+                  <button type ="button"><a href="add.php">ADD</a></button>
                   <button>MASS DELETE</button>    
             </div>
     </header>
