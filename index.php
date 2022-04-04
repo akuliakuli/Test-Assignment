@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name ="author" content = "me">
-    <title>ScandiWeb test</title>
+    <title>OOP PHP</title>
     <link rel ="stylesheet" href ="main.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
     ?>
 </main>
 <footer>
-    <p>Scandiweb Test assignment</p>
+    <p>OOP PHP</p>
 </footer>
 <script defer src ="script.js"></script>
 </body>

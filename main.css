@@ -72,13 +72,10 @@ main{
     gap: 2em;
     justify-content:center;
 }
-main > *{
-    width: 100%;
-}
+
 .item{
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding:.5em;
     border:2px solid #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -197,11 +194,35 @@ form{
         align-items: center;
     }
     main > *{
-        max-width: min-content;
+        width: 70%;
+        flex-grow: 1;
+        max-height: max-content;
     }
     .input-menu{
         flex-direction: column;
-        justify-content: flex-start;
-        align-items:flex-start;
+        max-height: min-content;
     }
+}
+@media (max-width:213px){
+    main {
+        max-height: 50vh;
+    }
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+    header button{
+        align-self: center;
+        font-size: 1em;
+    }
+    header p {
+        margin-left: .4em;
+        font-size: 1em;
+    }
+    main > *{
+        font-size: .8em;
+        min-width: fit-content;
+        min-height: max-content;
+    }
+    
 }

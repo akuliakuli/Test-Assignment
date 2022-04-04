@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name ="author" content = "me">
-    <title>ScandiWeb test</title>
+    <title>OOP PHP</title>
     <link rel ="stylesheet" href ="main.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 <header>
     <p>Product Add</p>
     <div class ="buttons">
-        <button type ="submit"><a href = "index.php">SAVE</a></button>
+        <button type ="submit">SAVE</button>
         <button>CANCEL</button>    
 </div>
 </header>
@@ -43,7 +43,7 @@
 <div class ="dvd">
     <div class ="option">
     <p>SIZE(MB)</p>
-        <input type ="text" placeholder="#size" id = "size">
+        <input type ="text" placeholder="#size" id = "size" name = "attr">
     </div>
     <p class ="text">Please Provide product SIZE</p>
     </div>
@@ -51,31 +51,33 @@
 <div class ="book">
     <div class ="option">
      <p>WEIGHT(CM)</p>
-     <input type ="text" placeholder="#weight" id = "weight">
+     <input type ="text" placeholder="#weight" id = "weight" name = "attr">
      </div>
      <p class ="text">Please Provide product WEIGHT';
 </div>
 <div class ="furniture">
     <div class = "option">
     <p>HEIGHT(CM)</p>
-        <input type ="text" placeholder="#height" id = "height">
+        <input type ="text" placeholder="#height" id = "height" name = "attr">
         </div>
         <p class ="text">Please Provide product HEIGHT</p>
         <div class ="option">
         <p>WIDTH(CM)</p>
-        <input type ="text" placeholder="#width" id = "width">
+        <input type ="text" placeholder="#width" id = "width" name = "attr">
         </div>
         <p class ="text">Please Provide product WIDTH</p>
         <div class ="option">
         <p>LENGHT(CM)</p>
-        <input type ="text" placeholder="#length" id = "length">
+        <input type ="text" placeholder="#length" id = "length" name = "attr" >
         </div>
         <p class ="text">Please Provide product LENGTH</p>'
     </div>
     </form>
-
+    <?php
+        
+    ?>
 <footer>
-    <p>Scandiweb Test assignment</p>
+    <p>OOP PHP</p>
 </footer>
 </body>
 </html>

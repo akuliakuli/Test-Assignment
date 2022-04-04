@@ -5,7 +5,6 @@ let switcher = document.querySelector("#product-type"),
 
 
 
-
 switcher.addEventListener("change",(e) =>{
      if(e.target.value == "dvd"){
          toggleEl(dvd,book,furn)
@@ -60,3 +59,4 @@ function toggleEl(el1,el2,el3){
 //         furn.classList.remove("show");
 //     }
 // }
+// 
